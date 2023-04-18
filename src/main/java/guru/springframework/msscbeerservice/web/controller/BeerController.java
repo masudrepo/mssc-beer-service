@@ -28,7 +28,9 @@ public class BeerController {
 
     }
 
-    @PutMapping("{/beerId}")
+
+
+    @PutMapping("/{beerId}")
     public ResponseEntity updateBeerById(@PathVariable("beerId") UUID beerId, @RequestBody BeerDto beerDto){
 
         //todo implementation
